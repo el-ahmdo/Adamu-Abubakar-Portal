@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import html2canvas from "html2canvas-pro";
 import { useRef, useState } from "react";
 
@@ -114,21 +114,23 @@ export default function EndorsementGenerator() {
 
         {/* USER IMAGE */}
         {preview && (
-          <img
+          <Image
             src={preview}
             alt="user"
+            width={150}
+            height={150}
             className="
-              absolute
-              bottom-5 
-              left-108
-              -translate-x-1/2
-              w-[150px]
-              h-[150px]
-              rounded-full
-              object-cover
-              border-4
-              border-white
-            "
+    absolute
+    bottom-5
+    left-108
+    -translate-x-1/2
+    w-[150px]
+    h-[150px]
+    rounded-full
+    object-cover
+    border-4
+    border-white
+  "
           />
         )}
 
