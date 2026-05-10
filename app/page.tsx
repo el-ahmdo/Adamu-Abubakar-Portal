@@ -28,12 +28,18 @@ export default function EndorsementGenerator() {
 
     const canvas = await html2canvas(posterRef.current, {
       scale: 3,
+      backgroundColor: null,
+      useCORS: true,
+      width: posterRef.current.offsetWidth,
+      height: posterRef.current.offsetHeight,
+      scrollX: 0,
+      scrollY: 0,
     });
 
     const link = document.createElement("a");
 
     link.download = "poster.png";
-    link.href = canvas.toDataURL();
+    link.href = canvas.toDataURL("image/png");
 
     link.click();
   };
@@ -42,7 +48,7 @@ export default function EndorsementGenerator() {
       {/* ================= MODAL ================= */}
       {open && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center md:px-4"
+          className="fixed  inset-0 z-50 flex items-center justify-center md:px-4"
           style={{ backgroundColor: "rgba(0,0,0,0.6)" }}>
           <div className="bg-white  md:mr-0 w-full md:max-w-md max-w-[300px] rounded-2xl p-6">
             <h2 className="text-2xl text-center font-bold mb-6">
@@ -106,9 +112,11 @@ export default function EndorsementGenerator() {
       {/* ================= POSTER CANVAS ================= */}
       <div
         ref={posterRef}
-        className={`relative w-[600px] h-[600px] bg-contain bg-no-repeat bg-center  overflow-hidden ${apper ? "block" : "hidden"}`}
+        className={`relative w-[500px] h-[600px] overflow-hidden ${apper ? "block" : "hidden"}`}
         style={{
-          backgroundImage: "url(/poster.png)", // 👈 your poster here
+          backgroundImage: "url(/poster.png)",
+          backgroundSize: "100% 100%",
+          backgroundRepeat: "no-repeat",
         }}>
         {/* AMBER TEST BOX (REMOVE LATER) */}
 
@@ -122,7 +130,7 @@ export default function EndorsementGenerator() {
             className="
     absolute
     bottom-5
-    left-108
+    left-100
     -translate-x-1/2
     w-[150px]
     h-[150px]
@@ -136,7 +144,7 @@ export default function EndorsementGenerator() {
 
         {/* USER NAME */}
         {name && (
-          <div className="absolute -bottom-3 left-24 w-[250px] h-38 ">
+          <div className="absolute -bottom-3 left-8 w-[250px] h-38 ">
             <p
               style={{
                 WebkitTextStroke: ".2px black",
@@ -151,7 +159,7 @@ export default function EndorsementGenerator() {
           </div>
         )}
 
-        <div className="absolute top-53 left-65 w-[250px] h-38 ">
+        <div className="absolute top-53 left-60 w-[250px] h-38 ">
           <p
             style={{
               WebkitTextStroke: ".2px black",
@@ -161,6 +169,17 @@ export default function EndorsementGenerator() {
               IGP Abubakar <br /> Adamu,
             </span>{" "}
             the <br /> Preferred Choice <br /> of the masses
+          </p>
+        </div>
+
+        <div className="absolute -bottom-34 -left-9 w-[250px] h-38 ">
+          <p
+            style={{
+              WebkitTextStroke: ".2px black",
+            }}
+            className="text-[10px] text-center font-stretch-semi-expanded font-extrabold text-white leading-snug  ">
+            <span className="font-thin italic">Sponsored by :</span> Shuiab
+            Gayam
           </p>
         </div>
       </div>
