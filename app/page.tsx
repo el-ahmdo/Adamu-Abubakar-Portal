@@ -44,7 +44,7 @@ export default function EndorsementGenerator() {
         <div
           className="fixed inset-0 z-50 flex items-center justify-center md:px-4"
           style={{ backgroundColor: "rgba(0,0,0,0.6)" }}>
-          <div className="bg-white mr-20 md:mr-0 w-full md:max-w-md max-w-[300px] rounded-2xl p-6">
+          <div className="bg-white  md:mr-0 w-full md:max-w-md max-w-[300px] rounded-2xl p-6">
             <h2 className="text-2xl text-center font-bold mb-6">
               Welcome to Abubakar Adamu <br /> Endorsment Portal
             </h2>
