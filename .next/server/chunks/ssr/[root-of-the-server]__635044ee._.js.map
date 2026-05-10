@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/my-next-app/src/app/sign-in/page.tsx"],"sourcesContent":["import React from \"react\";\n\nconst signin = () => {\n  return <div>signin</div>;\n};\n\nexport default signin;\n"],"names":[],"mappings":";;;;;;AAEA,MAAM,SAAS;IACb,qBAAO,8OAAC;kBAAI;;;;;;AACd;uCAEe","debugId":null}}]
-}

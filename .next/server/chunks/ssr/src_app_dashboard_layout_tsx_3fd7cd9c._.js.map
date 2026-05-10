@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/mac/my-next-app/src/app/dashboard/layout.tsx"],"sourcesContent":["import type { ReactNode } from \"react\";\nimport \"../../styles/globals.css\";\n\nexport default function DashboardLayout({ children }: { children: ReactNode }) {\n  return <div> dashboard{children}</div>;\n}\n"],"names":[],"mappings":";;;;;;;AAGe,SAAS,gBAAgB,EAAE,QAAQ,EAA2B;IAC3E,qBAAO,8OAAC;;YAAI;YAAW;;;;;;;AACzB","debugId":null}}]
-}
