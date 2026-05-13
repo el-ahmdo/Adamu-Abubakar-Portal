@@ -152,33 +152,33 @@ export default function EndorsementGenerator() {
               className="text-[18px] text-center text-white leading-snug  ">
               I am <span className=" font-semibold ">{name}</span> and{" "}
               <span className="  font-semibold ">
-                IGP Adamu Abubakar (Rtd.)
+                IGP Muhammad Adamu Abubakar (Rtd.)
               </span>{" "}
               is my preferred aspirant
             </p>
           </div>
         )}
 
-        <div className="absolute top-53 left-60 w-[250px] h-38 ">
+        <div className="absolute top-53 left-62 w-[250px] h-38 ">
           <p
             style={{
               WebkitTextStroke: ".2px black",
             }}
-            className="text-[25px] text-center font-stretch-semi-expanded font-extrabold text-white leading-snug  ">
+            className="text-[20px] text-center font-stretch-semi-expanded font-extrabold text-white leading-snug  ">
             <span>
-              IGP Abubakar <br /> Adamu,
+              IGP Muhammad Adamu <br /> Abubakar (Rtd.)
             </span>{" "}
             the <br /> Preferred Choice <br /> of the masses
           </p>
         </div>
 
-        <div className="absolute -bottom-34 -left-9 w-[250px] h-38 ">
+        <div className="absolute -bottom-35 -left-9 w-[250px] h-38 ">
           <p
             style={{
               WebkitTextStroke: ".2px black",
             }}
-            className="text-[10px] text-center font-stretch-semi-expanded font-extrabold text-white leading-snug  ">
-            <span className="font-thin italic">Sponsored by :</span> Shuiab
+            className="text-[9px] text-center font-stretch-semi-expanded font-extrabold text-white leading-snug  ">
+            <span className="font-thin italic">Sponsored by :</span> Shu’aib
             Gayam
           </p>
         </div>
