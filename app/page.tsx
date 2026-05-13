@@ -79,7 +79,7 @@ export default function EndorsementGenerator() {
     rounded-xl
     cursor-pointer
   ">
-              Click to Enter Your Picture
+              Click to upload Your Picture
             </label>
 
             <input
